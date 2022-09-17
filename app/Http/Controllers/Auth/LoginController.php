@@ -29,6 +29,20 @@ class LoginController extends Controller
     protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
+     * Get the needed authorization credentials from the request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
+     */
+    protected function credentials(Request $request)
+    {
+        $credentials = $request->only($this->username(), 'password');
+        // 管理者ユーザーのみログイン可
+        $credentials['is_admin'] = true;
+        return $credentials;
+    }
+    
+    /**
      * Create a new controller instance.
      *
      * @return void

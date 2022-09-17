@@ -32,6 +32,19 @@ class RegisterController extends Controller
     protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
+     * The user has been registered.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  mixed  $user
+     * @return mixed
+     */
+    protected function registered(Request $request, $user)
+    {
+        // ユーザー登録後に必ずログインさせるので、一旦ログアウト
+        Auth::logout();
+    }
+
+    /**
      * Create a new controller instance.
      *
      * @return void

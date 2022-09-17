@@ -21,18 +21,18 @@ return [
     'password'         => 'Password',
     'confirm_password' => 'Confirm Password',
     'remember_me'      => 'Remember Me',
-    'sign_in'          => 'Sign In',
-    'sign_out'         => 'Sign out',
-    'register'         => 'Register',
+    'sign_in'          => 'ログイン',
+    'sign_out'         => 'ログアウト',
+    'register'         => '登録',
 
     'login' => [
-        'title'               => 'Sign in to start your session',
+        'title'               => 'ログイン',
         'forgot_password'     => 'I forgot my password',
-        'register_membership' => 'Register a new membership',
+        'register_membership' => '新規登録',
     ],
 
     'registration' => [
-        'title'           => 'Register a new membership',
+        'title'           => '新規登録',
         'i_agree'         => 'I agree to',
         'terms'           => 'the terms',
         'have_membership' => 'I already have a membership',
