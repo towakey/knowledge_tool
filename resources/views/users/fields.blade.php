@@ -16,6 +16,12 @@
     {!! Form::password('password', ['class' => 'form-control','minlength' => 8]) !!}
 </div>
 
+<!-- Password Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('password_confirmation', 'Password Confirmation:') !!}
+    {!! Form::password('password_confirmation', ['class' => 'form-control','minlength' => 8]) !!}
+</div>
+
 <!-- Is Admin Field -->
 <div class="form-group col-sm-6">
     <div class="form-check">
