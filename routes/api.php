@@ -25,3 +25,8 @@ Route::group(['prefix' => 'v1', 'namespace' => 'V1'], function () {
         Route::put('api_token', 'ApiTokenController@update');
     });
 });
+
+
+Route::group(['prefix' => 'v1'], function () {
+    Route::resource('tweets', App\Http\Controllers\API\V1\TweetAPIController::class);
+});

@@ -1,8 +1,8 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\V1;
 
-use App\Models\Tweet;
+use App\Models\V1\Tweet;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class TweetFactory extends Factory
