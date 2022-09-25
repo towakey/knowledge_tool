@@ -6,3 +6,11 @@
 </li>
 
 
+<li class="nav-item">
+    <a href="{{ route('tweets.index') }}"
+       class="nav-link {{ Request::is('tweets*') ? 'active' : '' }}">
+        <p>Tweets</p>
+    </a>
+</li>
+
+

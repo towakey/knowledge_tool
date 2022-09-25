@@ -127,7 +127,61 @@
             }
         }
     },
-    "definitions": {},
+    "definitions": {
+        "User": {
+            "required": [
+                "name",
+                "email",
+                "password"
+            ],
+            "properties": {
+                "id": {
+                    "description": "id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "description": "name",
+                    "type": "string"
+                },
+                "email": {
+                    "description": "email",
+                    "type": "string"
+                },
+                "email_verified_at": {
+                    "description": "email_verified_at",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "password": {
+                    "description": "password",
+                    "type": "string"
+                },
+                "api_token": {
+                    "description": "api_token",
+                    "type": "string"
+                },
+                "remember_token": {
+                    "description": "remember_token",
+                    "type": "string"
+                },
+                "created_at": {
+                    "description": "created_at",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "updated_at": {
+                    "description": "updated_at",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "is_admin": {
+                    "description": "is_admin",
+                    "type": "boolean"
+                }
+            }
+        }
+    },
     "securityDefinitions": {
         "apiToken": {
             "type": "apiKey",
