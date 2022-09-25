@@ -31,17 +31,17 @@
 <!-- Reply Count Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('reply_count', 'Reply Count:') !!}
-    {!! Form::number('reply_count', null, ['class' => 'form-control','min' => 0]) !!}
+    {!! Form::number('reply_count', 0, ['class' => 'form-control','min' => 0]) !!}
 </div>
 
 <!-- Retweet Count Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('retweet_count', 'Retweet Count:') !!}
-    {!! Form::number('retweet_count', null, ['class' => 'form-control','min' => 0]) !!}
+    {!! Form::number('retweet_count', 0, ['class' => 'form-control','min' => 0]) !!}
 </div>
 
 <!-- Favorite Count Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('favorite_count', 'Favorite Count:') !!}
-    {!! Form::number('favorite_count', null, ['class' => 'form-control','min' => 0]) !!}
+    {!! Form::number('favorite_count', 0, ['class' => 'form-control','min' => 0]) !!}
 </div>
