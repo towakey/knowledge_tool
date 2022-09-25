@@ -109,6 +109,7 @@ class TweetAPIController extends AppBaseController
     public function store(CreateTweetAPIRequest $request)
     {
         $input = $request->all();
+        $input['user_id'] = auth('api')->id();
 
         $tweet = $this->tweetRepository->create($input);
 

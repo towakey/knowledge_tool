@@ -23,10 +23,11 @@ Route::group(['prefix' => 'v1', 'namespace' => 'V1'], function () {
     
     Route::group(['middleware' => 'auth:api'], function () {
         Route::put('api_token', 'ApiTokenController@update');
+        Route::resource('tweets', App\Http\Controllers\API\V1\TweetAPIController::class);
     });
 });
 
 
-Route::group(['prefix' => 'v1'], function () {
-    Route::resource('tweets', App\Http\Controllers\API\V1\TweetAPIController::class);
-});
+// Route::group(['prefix' => 'v1'], function () {
+//     Route::resource('tweets', App\Http\Controllers\API\V1\TweetAPIController::class);
+// });
